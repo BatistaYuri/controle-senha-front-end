@@ -1,0 +1,30 @@
+<div class="div-img">
+
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" class="all-card">
+    <div fxLayout="column" fxLayoutAlign="center stretch" class="div-card">
+        <h2 class="legenda">
+            Senha atual:
+        </h2>
+        <div class="card card-senha-atual">
+            <a class="senha" *ngIf="senhaAtual" [style.color]="(senhaAtual.tipoSenha.id == 1) ? ('rgba(127, 209, 72, 1.0)') : ('rgba(26, 170, 204, 1.0)')">{{senhaAtual.tipoSenha.sigla}}{{senhaAtual.id}}</a>
+        </div>
+        <h2 class="legenda">
+            Próximas senhas:
+        </h2>
+        <div fxLayout="row" fxLayoutAlign="space-between start" >
+            <div class="card card-proximas-senhas">
+                <h3 *ngFor="let senha of senhas" [style.color]="(senha.tipoSenha.id == 1) ? ('rgba(127, 209, 72, 1.0)') : ('rgba(26, 170, 204, 1.0)')">
+                    <span *ngIf="senha.status !=1 ">{{senha.tipoSenha.sigla}}{{senha.id}}</span>
+                </h3>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start stretch" class="botoes">
+                <button mat-raised-button (click)="gerarSenha(2)" style="background-color: rgba(26, 170, 204, 1.0); color: white;">Senha normal</button>
+                <button mat-raised-button (click)="gerarSenha(1)" style="background-color: rgba(127, 209, 72, 1.0); color: white;">Senha preferencial</button>
+                <button *ngIf="usuario == 'gerente'" mat-raised-button (click)="chamarSenha()">Proxíma senha</button>
+                <button *ngIf="usuario == 'gerente'" mat-raised-button (click)="reset()">Reiniciar senhas</button>
+            </div>
+        </div>
+    </div>
+
+</div>
