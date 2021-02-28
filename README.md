@@ -27,5 +27,6 @@ E caso você esteja usando o ambiente back-end local troque o valor da variável
 
 ### Navegando pelo gerenciador
 Não é possível navegar entre links, apenas acesso direto.
+
 Link para o Gerente: http://localhost:4200/gerente
 Link para o Cliente: http://localhost:4200/cliente
