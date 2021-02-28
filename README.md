@@ -16,8 +16,10 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ### Configurar arquivo environment
 no caminho: scr/environments/environment.ts
-a váriavel **backendUrl** está configurada com o link do back-end no servidor da [Amazon AWS](https://aws.amazon.com/pt/) 
+a váriavel **backendUrl** está configurada com o link do back-end no servidor da [Amazon AWS](https://aws.amazon.com/pt/)
+
 APIs: http://gerenciadordesenhas2-env.eba-2iebjrez.sa-east-1.elasticbeanstalk.com/swagger-ui.html#/senha45controller;
+
 E caso você esteja usando o ambiente back-end local troque o valor da variável por http://localhost:8080.
 
 ### Rodar projeto
