@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  backendUrl: "http://gerenciadordesenhas-env.eba-f9ahishr.sa-east-1.elasticbeanstalk.com/" //http://localhost:8080
+  backendUrl: "http://gerenciadordesenhas-env.eba-f9ahishr.sa-east-1.elasticbeanstalk.com" //http://localhost:8080
 };
 
 /*
