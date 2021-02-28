@@ -1,27 +1,32 @@
-# PariPassu
+# Gerenciador de senhas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+Sistema de controle de senhas para atendimento bancário. O sistema será utilizado por dois perfis de usuários: GERENTE e CLIENTE. O Gerente será responsável pela administração do sistema, chamando novas senhas e reiniciando a contagem de senhas quando for necessário. Ao cliente caberá apenas a retirada e acompanhamento das senhas.
 
-## Development server
+# Framework
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.2.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Criação do ambiente
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Clonar projeto do GitHub
+`git clone https://github.com/BatistaYuri/controle-senha-front-end.git`
 
-## Build
+### Instalar dependências
+`npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Configurar arquivo environment
+no caminho: scr/environments/environment.ts
+a váriavel **backendUrl** está configurada com o link do back-end no servidor da [Amazon AWS](https://aws.amazon.com/pt/)
 
-## Running unit tests
+APIs: http://gerenciadordesenhas2-env.eba-2iebjrez.sa-east-1.elasticbeanstalk.com/swagger-ui.html#/senha45controller;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+E caso você esteja usando o ambiente back-end local troque o valor da variável por http://localhost:8080.
 
-## Running end-to-end tests
+### Rodar projeto
+`npm start`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Navegando pelo gerenciador
+Não é possível navegar entre links, apenas acesso direto.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Link para o Gerente: http://localhost:4200/gerente
+Link para o Cliente: http://localhost:4200/cliente
