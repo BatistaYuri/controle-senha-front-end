@@ -3,10 +3,6 @@
     position: relative; 
     top: -40vh;
 }
-.div-img{
-    height: 50vh;
-    background-image: url('https://www.paripassu.com.br/hubfs/Paripassu%20Aplicativos%20Banner.jpg') !important;
-}
 .div-card{
     height: 100%;
     width: 50%;

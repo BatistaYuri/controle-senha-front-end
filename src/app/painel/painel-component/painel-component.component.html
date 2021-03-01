@@ -1,6 +1,3 @@
-<div class="div-img">
-
-</div>
 <div fxLayout="row" fxLayoutAlign="center center" class="all-card">
     <div fxLayout="column" fxLayoutAlign="center stretch" class="div-card">
         <h2 class="legenda">
@@ -23,6 +20,7 @@
                 <button mat-raised-button (click)="gerarSenha(1)" style="background-color: rgba(127, 209, 72, 1.0); color: white;">Senha preferencial</button>
                 <button *ngIf="usuario == 'gerente'" mat-raised-button (click)="chamarSenha()">Proxíma senha</button>
                 <button *ngIf="usuario == 'gerente'" mat-raised-button (click)="reset()">Reiniciar senhas</button>
+                <button *ngIf="usuario == 'gerente'" mat-raised-button [routerLink]="''">Trocar perfil</button>
             </div>
         </div>
     </div>

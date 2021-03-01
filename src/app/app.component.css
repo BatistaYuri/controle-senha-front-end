@@ -2,3 +2,7 @@ mat-toolbar{
     background-color: #fff;
     box-shadow: 0 0 6px rgb(0 0 0 / 50%);
 }
+.div-img{
+    height: 50vh;
+    background-image: url('https://www.paripassu.com.br/hubfs/Paripassu%20Aplicativos%20Banner.jpg') !important;
+}

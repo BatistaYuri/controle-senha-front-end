@@ -1,1 +1,14 @@
-teste
+<div class="painel">
+    <div fxLayout="column" fxLayoutAlign="center center"  class="div-titulo">
+        <h6>
+            Bem vindo ao sistema de controle de senhas da PariPassu!
+        </h6>
+        <h6>
+            Escolha o perfil que deseja acessar
+        </h6>
+        <div class="botoes-perfis" fxLayout="row" fxLayoutAlign="space-between center">
+            <button mat-raised-button [routerLink]="'gerente'">Gerente</button>
+            <button mat-raised-button [routerLink]="'cliente'">Cliente</button>
+        </div>
+    </div>
+</div>
