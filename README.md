@@ -28,7 +28,7 @@ E caso você esteja usando o ambiente back-end local troque o valor da variável
 `npm start`
 
 ### Navegando pelo gerenciador
-Não é possível navegar entre links, apenas acesso direto.
+Ao entrar na tela principal, escolha entre os perfis Gerente e Cliente. O perfil Gerente tem a posibilidade de voltar para tela incial para escolher outro perfil.
 
 Link para o Gerente: http://localhost:4200/gerente
 Link para o Cliente: http://localhost:4200/cliente
