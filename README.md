@@ -7,6 +7,8 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 
 ## Criação do ambiente
+### Node
+Instale o node: https://nodejs.org/pt-br/download/
 
 ### Clonar projeto do GitHub
 `git clone https://github.com/BatistaYuri/controle-senha-front-end.git`
